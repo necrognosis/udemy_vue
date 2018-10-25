@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vue Conditional Output</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+
+    <h1>Vue Conditional Output</h1>
+    <div id="app">
+        <h2>{{ title }}</h2>
+        <ul>
+            <li v-for="item of items">{{ item }}</li>
+        </ul>
+        <div v-for="(dude, index) of dudes">
+            <p>{{ index }} - {{ dude.name }}</p>
+            <p>{{ dude.age }} years old</p>
+            <p>Wearing a {{ dude.hat }} coloured hat</p>
+        </div>
+        
+        <!-- If/Else If -->
+        <!-- <p v-if="showName">Bender</p>
+        <p v-else-if="showAge">25</p>
+
+        <button @click="toggleName">ShowName: {{ showName }}</button>
+        <button @click="toggleAge">ShowAge: {{ showAge }}</button> -->
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>

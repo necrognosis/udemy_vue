@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vue Events</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <style>
+        .canvas {
+            width: 300px;
+            height: 300px;
+            margin-top: 20px;
+            background: #ddd;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Vue Events</h1>
+    <div id="app">
+        <h2>{{ title }}</h2>
+        <!-- Modifiers -->
+        <!-- <button @click.alt="logMessage">Click Me!</button>
+        <button @click.shift="logMessage">Click Me!</button>
+        <a @click.prevent="logMessage" href="https://www.google.com">Google</a> -->
+
+        <!-- Two Way Data Binding -->
+        <!-- <p>My Name is {{ name }}</p>
+        <input type="text" v-model="name"> -->
+
+        <!-- Event Object -->
+        <!-- <button @click="logEvent">Log Event Object</button>
+        <div class="canvas" @mousemove="logCoords">{{ coords.x }}, {{ coords.y }}</div> -->
+
+        <!-- Event Basics -->
+        <!-- <p>I earn {{ wage }} pounds per hour</p>
+        <button v-on:click="changeWage(1)">Increase wage by &#163;1</button>
+        <button v-on:click="changeWage(-1)">Decrease wage by &#163;1</button>
+        <button v-on:dblclick="changeWage(5)">Increase wage by &#163;5</button>
+        <button v-on:dblclick="changeWage(-5)">Increase wage by &#163;5</button> -->
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
